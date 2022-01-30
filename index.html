@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<head>
+
+    <title>LKCS Financial</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Custom Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/png" href="#">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- ** SECTION ONE: Top Bar Header ** -->
+        <section id="adjustHeader">
+
+            <!-- Header -->
+            <header class="d-none d-md-block">
+                <div class="row row-cols-1 gy-1">
+                    <!-- Font Size Adjuster -->
+                    <div class="col col-md-6 d-flex justify-content-end">
+                        <button class="button-7" onclick="adjustFontSize('increase')">
+                            <i class="fas fa-text"></i><i class="fas fa-plus"></i>
+                        </button>
+                        <button class="button-7" onclick="adjustFontSize('decrease')">
+                            <i class="fas fa-text"></i><i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    <!-- Facebook Icon -->
+                    <div class="col col-md-1 d-flex justify-content-end">
+                        <div class="container pt-2">
+                            <li class="list-inline-item"><a href="#" target="_blank"><i
+                                        class="fab fa-facebook-square fa-2x"></i></a>
+                            </li>
+                        </div>
+                    </div>
+                    <!-- Mobile Icons -->
+                    <div class="col col-md-2 d-flex justify-content-end">
+                        Mobile App:
+                        <ul>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i
+                                        class="fab fa fa-apple fa-2x"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i
+                                        class="fab fa fa-android fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Address & Phone -->
+                    <div class="col col-md-3 d-flex justify-content-center">
+                        1414 Sample Ave. • Peru, IL 61354 | 123.456.7891
+                    </div>
+                </div>
+            </header>
+
+        </section>
+
+        <!-- ** SECTION TWO: Logo, Navigation, & OBL ** -->
+        <section id="adjustNav">
+            <!-- Navigation -->
+            <div class="row row-cols-1">
+                <div class="col col-md-9 nav-content">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="d-flex container-fluid">
+
+                            <!-- Logo -->
+                            <div class="container">
+                                <a class="navbar-brand" href="/index.html">
+                                    <img src="/img/lkcs-financial-logo.png" class="logo">
+                                </a>
+                            </div>
+
+                            <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- Nav Links -->
+                            <div class="collapse navbar-collapse nav-content" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            Accounts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            Loans
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                                            About
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+                <!-- OBL -->
+                <div class="col col-md-3 obl-content">
+                    <div class="container p-5 mb-5">
+                        <h2>Online Banking</h2>
+                        <button class="button-1" role="button">User ID</button>
+                        <button class="button-2 mt-3" role="button">Login</button>
+                        <p class="mt-2">
+                            <a href="#">Forgot password?</a> | <a href="#">Enroll Now</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ** SECTION THREE: Hero Feature / Call to Action ** -->
+        <section id="adjustHero">
+            <!-- Hero Section -->
+            <div class="row row-cols-1 hero">
+                <div class="col d-flex hero-content align-items-center">
+                    <div class="container d-flex justify-content-center justify-content-md-end">
+                        <h1>Home Sweet Home</h1>
+                        <button class="button-3 mt-3" role="button">Learn about Mortgages</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ** SECTION FOUR: Stat & Link Tiles ** -->
+        <section id="adjustTiles">
+            <!-- Tiles -->
+            <section class="tiles">
+                <div class="row row-cols-1 tiles-content">
+                    <div class="col col-md-4 stats">
+                        <p>
+                            <h4>Mortgage Loans</h4>
+                            as low as 4.10% APR
+                        </p>
+                    </div>
+                    <div class="col col-md-4 stats">
+                        <p>
+                            <h4>Auto Loans</h4>
+                            as low as 2.50% APR
+                        </p>
+                    </div>
+                    <div class="col col-md-4 stats">
+                        <p>
+                            <h4>Credit Cards</h4>
+                            as low as 9.99% APR
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 p-3 tiles-content">
+                    <div class="col col-md-4 mt-3 d-flex justify-content-end">
+                        <img src="img/loan.png" class="cover">
+                    </div>
+                    <div class="col col-md-4 mt-3 align-self-end">
+                        <img src="img/hours.png" class="cover">
+                    </div>
+                    <div class="col col-md-4 mt-3 align-self-end">
+                        <img src="img/contact.png" class="cover">
+                    </div>
+                    <div class="col col-md-4 mt-3">
+                        <img src="img/checks.png" class="cover">
+                    </div>
+                    <div class="col col-md-4 mt-3">
+                        <img src="img/newsletter.png" class="cover">
+                    </div>
+                    <div class="col col-md-4 mt-3">
+                        <img src="img/atm.png" class="cover">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ** SECTION FIVE: Events & News ** -->
+        <section id="adjustCalendar">
+            <!-- Events & News -->
+            <div class="row row-cols-1 calendar">
+                <div class="col col-md-6 events p-5">
+                    <div class="container">
+                        <h2>Events</h2>
+                        <p>
+                            <h4>Thanksgiving Party</h4>
+                            <h5>11/25/22</h5>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book.
+                        </p>
+                        <p>
+                            <h4>New Years Party</h4>
+                            <h5>1/5/22</h5>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                            as
+                            their
+                            default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                            their
+                            infancy.
+                        </p>
+                        <button class="button-4 mt-3" role="button">More Events</button>
+                    </div>
+
+                </div>
+                <div class="col col-md-6 news p-5">
+                    <div class="container">
+                        <h2 class="pt-5">News</h2>
+                        <p>
+                            <h4>News Story Title</h4>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                            of
+                            classical
+                            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                            professor at
+                            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                            consectetur,
+                            from a
+                            Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                            discovered
+                            the
+                            undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+                            Bonorum
+                            et Malorum"
+                            (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
+                            theory of
+                            ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum
+                            dolor
+                            sit amet..",
+                            comes from a line in section 1.10.32.
+                        </p>
+                        <p>
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                            interested.
+                            Sections
+                            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+                            their
+                            exact original
+                            form, accompanied by English versions from the 1914 translation by H. Rackham.
+                        </p>
+
+                        <button class="button-5 mt-3" role="button">More News</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ** SECTION SIX: Interactive Poll ** -->
+        <section id="adjustPoll">
+            <!-- Poll -->
+            <div class="row interactive-poll">
+                <div class="col">
+                    <div class="poll-content">
+                        <h3>Poll</h3>
+                        <h6>What is your favorite genre of movie?</h6>
+                        <div class="container">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Sci-Fi
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Horror
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Romantic Comedy
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Action
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ** SECTION SEVEN: Marketplace Carosel ** -->
+        <section id="adjustMarketplace" class="marketplace">
+            <!-- Marketplace -->
+            <div class="row row-cols-1 marketplace-content">
+                <div class="col col-md-6">
+
+                    <div class="container">
+                        <h3>Marketplace</h3>
+                        <p>2012 Chevy Impala<br>
+                            56,000 Miles</p>
+                        <button class="button-6 mt-3" role="button">More Vechile Info</button>
+                    </div>
+
+
+                </div>
+                <div class="col col-md-6">
+                    <img src="img/car.png" class="cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- ** SECTION EIGHT: Footer ** -->
+        <section id="adjustFooter">
+            <!-- Footer -->
+            <footer class="footer-content">
+                <div class="row row-cols-1 d-flex">
+                    <div class="col col-md-4 order-last order-md-first">
+                        <img src="img/Large-LKCS.png" class="footer-logo">
+                        <img src="img/eho.png" class="footer-icon">
+                    </div>
+                    <div class="col col-md-4">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Website Accesibility</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-4">
+                        <ul>
+                            <li class="list-inline-item">
+                                <img src="img/lkcs.png" class="footer-icon">
+                            </li>
+                            <li class="list-inline-item">
+                                Website design by LKCS
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- *** SCRIPTS *** -->
+    <!-- *** Bootstrap 5 *** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="/js/fontsize.js"></script>
+
+</body>
+
+</html>
