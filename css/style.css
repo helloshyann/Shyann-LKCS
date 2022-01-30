@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/dus8hal.css");
+
 :root {
     --diagonal-offset: 120px;
     --primary-green: #026963;
@@ -12,6 +14,9 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: alwyn-new-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -42,9 +47,10 @@ nav .container {
     padding-bottom: 150px;
 }
 
-nav .nav-item{
+nav .nav-item {
     padding-left: 50px;
     padding-right: 50px;
+    letter-spacing: 1px;
 }
 
 .nav-content {
@@ -63,6 +69,7 @@ nav .nav-item{
 
 .obl-content a {
     color: #fff;
+    text-decoration: none;
 }
 
 .obl-content a:hover {
@@ -80,7 +87,7 @@ nav .nav-item{
 main>.container {
     padding: 60px 15px 0;
     margin-bottom: 3rem;
-    
+
 }
 
 main>.container-fluid {
@@ -121,6 +128,13 @@ main>.container-fluid {
     text-align: center;
 }
 
+.hero h1 {
+    font-family: alwyn-new-web, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 4.5rem;
+}
+
 @supports (clip-path: none) {
     .hero::before {
         height: calc(100% + var(--diagonal-offset) * 2);
@@ -130,19 +144,30 @@ main>.container-fluid {
     }
 }
 
-
-
 /** Tile Styles **/
 
 .stats {
     text-align: center;
-    padding-bottom: 25px;
+    color: var(--primary-green);
+}
+
+.stats h1{
+    font-size: 100px;
+    font-weight: 700px;
+    display: inline;
+}
+
+.stats h3{
+    color: var(--dark-grey);
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .tiles {
     color: #5f5f5f;
     background-color: transparent;
     position: relative;
+    
 }
 
 .tiles .first-link-row {
@@ -167,6 +192,10 @@ main>.container-fluid {
 
 .tiles .container {
     text-align: center;
+}
+
+.tiles .shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 @supports (clip-path: none) {
@@ -203,6 +232,8 @@ main>.container-fluid {
     background-color: transparent;
     position: relative;
     min-height: 400px;
+    letter-spacing: 1;
+    text-align:center;
 }
 
 .interactive-poll::before {
@@ -214,6 +245,20 @@ main>.container-fluid {
     height: 100%;
     background-color: #e6f8ff;
 
+}
+
+.interactive-poll h3{
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+.interactive-poll h6{
+    color: var(--dark-grey);
+    font-weight: 700;
+}
+
+.interactive-poll label{
+    padding-right: 50px;
 }
 
 .poll-content {
@@ -235,14 +280,19 @@ main>.container-fluid {
 /** Marketplace Styles **/
 
 .marketplace {
-    color: #026963;
+    color: var(--dark-grey);
     background-color: #ffffff;
     position: relative;
     min-height: 400px;
 }
 
+.marketplace h1{
+    color: var(--primary-green);
+    font-weight: 750;
+}
+
 .marketplace .container {
-    padding-left: 150px;
+    padding-left: 300px;
     padding-top: 50px;
 }
 
@@ -259,6 +309,10 @@ main>.container-fluid {
 .marketplace-content {
     position: relative;
     z-index: 1;
+}
+
+.marketplace img{
+    padding-right: 150px;
 }
 
 @supports (clip-path: none) {
@@ -288,18 +342,18 @@ footer {
     clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
 }
 
-.footer-content a{
+.footer-content a {
     color: #fff;
     text-decoration: none;
 }
 
-.footer-content a:hover{
+.footer-content a:hover {
     color: var(--soft-blue);
     text-decoration: underline;
 }
 
 .footer-logo {
-    bottom:0;
+    bottom: 0;
     height: 75%;
 }
 
@@ -309,8 +363,6 @@ footer {
     padding-top: 10px;
 }
 
-
-
 /*** Images ***/
 .cover {
     width: 100%;
@@ -319,9 +371,6 @@ footer {
     object-fit: cover;
 
 }
-
-/* <!-- HTML !-->
-<button class="button-59" role="button">Button 59</button> */
 
 /* Buttons */
 .button-1 {
@@ -333,12 +382,10 @@ footer {
     cursor: pointer;
     display: inline-flex;
     fill: #000;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     height: 48px;
     justify-content: center;
-    letter-spacing: -.8px;
     line-height: 24px;
     min-width: 140px;
     outline: 0;
@@ -383,12 +430,10 @@ footer {
     cursor: pointer;
     display: inline-flex;
     fill: #000;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     height: 48px;
     justify-content: center;
-    letter-spacing: -.8px;
     line-height: 24px;
     min-width: 140px;
     outline: 0;
@@ -433,12 +478,11 @@ footer {
     cursor: pointer;
     display: inline-flex;
     fill: #000;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     height: 48px;
     justify-content: center;
-    letter-spacing: -.8px;
+    font-weight: 700;
     line-height: 24px;
     min-width: 140px;
     outline: 0;
@@ -456,9 +500,9 @@ footer {
 }
 
 .button-3:hover {
-    border-color: #fff;
+    border-color: var(--soft-blue);
     background-color: var(--primary-green);
-    color: #fff;
+    color: var(--soft-blue);
     fill: var(--tertiary-green);
 }
 
@@ -483,12 +527,10 @@ footer {
     cursor: pointer;
     display: inline-flex;
     fill: #000;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     height: 48px;
     justify-content: center;
-    letter-spacing: -.8px;
     line-height: 24px;
     min-width: 140px;
     outline: 0;
@@ -533,12 +575,10 @@ footer {
     cursor: pointer;
     display: inline-flex;
     fill: #000;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     height: 48px;
     justify-content: center;
-    letter-spacing: -.8px;
     line-height: 24px;
     min-width: 140px;
     outline: 0;
@@ -583,12 +623,10 @@ footer {
     cursor: pointer;
     display: inline-flex;
     fill: #000;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     height: 48px;
     justify-content: center;
-    letter-spacing: -.8px;
     line-height: 24px;
     min-width: 140px;
     outline: 0;
@@ -607,8 +645,8 @@ footer {
 
 .button-6:hover {
     border-color: var(--tertiary-green);
-    background-color: var(--primary-green);
-    color: #fff;
+    background-color: #fff;
+    color: var(--primary-green);
     fill: var(--tertiary-green);
 }
 
@@ -633,12 +671,10 @@ footer {
     cursor: pointer;
     display: inline-flex;
     fill: #000;
-    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 600;
     height: 48px;
     justify-content: center;
-    letter-spacing: -.8px;
     line-height: 24px;
     max-width: 100px;
     outline: 0;
@@ -667,3 +703,4 @@ footer {
     color: var(--tertiary-green);
     fill: var(--tertiary-green);
 }
+

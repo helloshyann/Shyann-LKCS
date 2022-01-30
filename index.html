@@ -9,13 +9,13 @@
 
     <!-- Custom Stylesheets -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
@@ -38,10 +38,10 @@
                     <!-- Font Size Adjuster -->
                     <div class="col col-md-6 d-flex justify-content-end">
                         <button class="button-7" onclick="adjustFontSize('increase')">
-                            <i class="fas fa-text"></i><i class="fas fa-plus"></i>
+                            <i class="fad fa-text-size"></i><i class="fas fa-plus fa-xs"></i>
                         </button>
                         <button class="button-7" onclick="adjustFontSize('decrease')">
-                            <i class="fas fa-text"></i><i class="fas fa-minus"></i>
+                            <i class="fad fa-text-size"></i><i class="fas fa-minus fa-xs"></i>
                         </button>
                     </div>
                     <!-- Facebook Icon -->
@@ -84,7 +84,7 @@
                             <!-- Logo -->
                             <div class="container">
                                 <a class="navbar-brand" href="/index.html">
-                                    <img src="/img/lkcs-financial-logo.png" class="logo">
+                                    <img src="/img/lkcs-financial-logo.png" class="logo animate__animated animate__fadeIn">
                                 </a>
                             </div>
 
@@ -144,9 +144,22 @@
             <!-- Hero Section -->
             <div class="row row-cols-1 hero">
                 <div class="col d-flex hero-content align-items-center">
+                    
                     <div class="container d-flex justify-content-center justify-content-md-end">
-                        <h1>Home Sweet Home</h1>
-                        <button class="button-3 mt-3" role="button">Learn about Mortgages</button>
+                        <div class="row row-cols-1 pb-5">
+                            <div class="col">
+                                <h1>Home<br>
+                                    Sweet<br>
+                                    Home
+                                </h1>
+                            </div>
+                        
+                            <div class="col">
+                                <button class="button-3 mt-3" role="button">Learn about Mortgages</button>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
 
@@ -158,43 +171,43 @@
             <!-- Tiles -->
             <section class="tiles">
                 <div class="row row-cols-1 tiles-content">
-                    <div class="col col-md-4 stats">
-                        <p>
-                            <h4>Mortgage Loans</h4>
-                            as low as 4.10% APR
+                    <div class="col col-md-4 stats pt-1">
+                        <p">
+                            <h3>Mortgage Loans</h3>
+                            as low as <h1 class="inline">4.10</h1>% APR
                         </p>
                     </div>
-                    <div class="col col-md-4 stats">
+                    <div class="col col-md-4 stats pt-3">
                         <p>
-                            <h4>Auto Loans</h4>
-                            as low as 2.50% APR
+                            <h3>Auto Loans</h3>
+                            as low as <h1>2.50</h1>% APR
                         </p>
                     </div>
-                    <div class="col col-md-4 stats">
+                    <div class="col col-md-4 stats pt-5">
                         <p>
-                            <h4>Credit Cards</h4>
-                            as low as 9.99% APR
+                            <h3>Credit Cards</h3>
+                            as low as <h1>9.99</h1>% APR
                         </p>
                     </div>
                 </div>
                 <div class="row row-cols-1 p-3 tiles-content">
                     <div class="col col-md-4 mt-3 d-flex justify-content-end">
-                        <img src="img/loan.png" class="cover">
+                        <img src="img/loan.png" class="cover hvr-pulse-shrink">
                     </div>
                     <div class="col col-md-4 mt-3 align-self-end">
-                        <img src="img/hours.png" class="cover">
+                        <img src="img/hours.png" class="cover hvr-pulse-shrink">
                     </div>
                     <div class="col col-md-4 mt-3 align-self-end">
-                        <img src="img/contact.png" class="cover">
+                        <img src="img/contact.png" class="cover hvr-pulse-shrink">
                     </div>
                     <div class="col col-md-4 mt-3">
-                        <img src="img/checks.png" class="cover">
+                        <img src="img/checks.png" class="cover hvr-pulse-shrink">
                     </div>
                     <div class="col col-md-4 mt-3">
-                        <img src="img/newsletter.png" class="cover">
+                        <img src="img/newsletter.png" class="cover hvr-pulse-shrink">
                     </div>
                     <div class="col col-md-4 mt-3">
-                        <img src="img/atm.png" class="cover">
+                        <img src="img/atm.png" class="cover hvr-pulse-shrink">
                     </div>
                 </div>
             </section>
@@ -236,7 +249,7 @@
 
                 </div>
                 <div class="col col-md-6 news p-5">
-                    <div class="container">
+                    <div class="container pb-5">
                         <h2 class="pt-5">News</h2>
                         <p>
                             <h4>News Story Title</h4>
@@ -309,14 +322,14 @@
             </div>
         </section>
 
-        <!-- ** SECTION SEVEN: Marketplace Carosel ** -->
+        <!-- ** SECTION SEVEN: Marketplace ** -->
         <section id="adjustMarketplace" class="marketplace">
             <!-- Marketplace -->
             <div class="row row-cols-1 marketplace-content">
                 <div class="col col-md-6">
 
                     <div class="container">
-                        <h3>Marketplace</h3>
+                        <h1>Marketplace</h1>
                         <p>2012 Chevy Impala<br>
                             56,000 Miles</p>
                         <button class="button-6 mt-3" role="button">More Vechile Info</button>
@@ -325,7 +338,7 @@
 
                 </div>
                 <div class="col col-md-6">
-                    <img src="img/car.png" class="cover">
+                    <img src="img/car.png" class="cover animate__animated animate__fadeInBottomRight">
                 </div>
             </div>
         </section>
@@ -339,7 +352,7 @@
                         <img src="img/Large-LKCS.png" class="footer-logo">
                         <img src="img/eho.png" class="footer-icon">
                     </div>
-                    <div class="col col-md-4">
+                    <div class="col col-md-4 p-2">
                         <ul>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Website Accesibility</a></li>
