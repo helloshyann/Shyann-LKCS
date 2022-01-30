@@ -353,11 +353,11 @@ footer {
 
 .footer-logo {
     bottom: 0;
-    height: 75%;
+    max-width: 75%;
 }
 
 .footer-icon {
-    max-width: 100px;
+    max-width: 75%;
     max-height: 100px;
     padding-top: 10px;
 }
