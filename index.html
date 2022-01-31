@@ -11,7 +11,7 @@
     <!-- Custom Stylesheets -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/hover.css" rel="stylesheet">
-
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
 
     <!-- Bootstrap CSS -->
@@ -23,6 +23,8 @@
 
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" href="/img/lkcs.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/countUp.js"></script>
 
 </head>
 
@@ -174,23 +176,23 @@
         <section id="adjustTiles">
             <!-- Tiles -->
             <section class="tiles">
-                <div class="row row-cols-1 tiles-content">
+                <div id="stats" class="row row-cols-1 tiles-content">
                     <div class="col col-md-4 stats pt-1">
                         <p>
                             <h3>Mortgage Loans</h3>
-                            as low as <h1 class="number">4.10</h1>% APR
+                            as low as <h1 id="mortgage">4.10</h1>% APR
                         </p>
                     </div>
                     <div class="col col-md-4 stats pt-3">
                         <p>
                             <h3>Auto Loans</h3>
-                            as low as <h1 id="number2" class="number">2.50</h1>% APR
+                            as low as <h1 id="auto">2.50</h1>% APR
                         </p>
                     </div>
                     <div class="col col-md-4 stats pt-5">
                         <p>
                             <h3>Credit Cards</h3>
-                            as low as <h1 id="number3" class="number">9.99</h1>% APR
+                            as low as <h1 id="credit">9.99</h1>% APR
                         </p>
                     </div>
                 </div>
@@ -415,7 +417,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
     <script src="/js/fontsize.js"></script>
+
+    <script>
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+        };
+        var mortgage = new CountUp('mortgage', 0, 4.10, 2, 5, options);
+        mortgage.start();
+        var auto = new CountUp('auto', 0, 2.50, 2, 5, options);
+        auto.start();
+        var credit = new CountUp('credit', 0, 9.99, 2, 5, options);
+        credit.start();
+    </script>
 
 </body>
 
