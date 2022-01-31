@@ -18,10 +18,10 @@ Making the diagonal design was by far the most interesting challenge. After doin
 I recreated the effect by using CSS to create psudo-elements, transforming them by skewing them along the y-axis to get that parallelogram shape, 
 and then clip-path the edges of those elements to give the illusion the sections are actually slanted. While this solution worked, it caused a few 
 finicky margin/padding type issues where there was more space between elements than desired.
-  -[© Shyann Jobe 2020](https://shyann.netlify.app)
-  -[© Shyann Jobe 2020](https://shyann.netlify.app)
-  -[© Shyann Jobe 2020](https://shyann.netlify.app)
-  -[© Shyann Jobe 2020](https://shyann.netlify.app)
+  - [© Shyann Jobe 2020](https://shyann.netlify.app)
+  - [© Shyann Jobe 2020](https://shyann.netlify.app)
+  - [© Shyann Jobe 2020](https://shyann.netlify.app)
+  - [© Shyann Jobe 2020](https://shyann.netlify.app)
 
 ### Font Size Tool
 
