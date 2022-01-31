@@ -25,6 +25,10 @@ finicky margin/padding type issues where there was more space between elements t
 
 ### Font Size Tool
 
+I gave all the text elements on the DOM I wanted to be manipulated an ID, then created a JavaScript function which took in an array of those IDs, 
+and loops through each item in the array. Using the Window.getComputedStyle() method returns the current value of the font size for the objects selected, 
+and increases or decreases the size by 5 pixels.
+
 ```
 function adjustFontSize(type){
 
@@ -48,4 +52,6 @@ function adjustFontSize(type){
 
 ### Additional Effects
 
-animate, hover, countup
+- Animate.CSS
+- Hover.CSS
+- CountUp.JS
