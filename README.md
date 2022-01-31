@@ -56,4 +56,9 @@ function adjustFontSize(type){
 - Hover.CSS
 - CountUp.JS
 
-### Total Hours: ~12
+I used these additional libraries to add some light-weight animation to highlight intentions and capture user's attention.
+
+### Total Hours: ~ 12 - 16
+
+
+
