@@ -55,3 +55,5 @@ function adjustFontSize(type){
 - Animate.CSS
 - Hover.CSS
 - CountUp.JS
+
+### Total Hours: ~12
