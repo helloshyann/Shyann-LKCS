@@ -52,9 +52,9 @@ function adjustFontSize(type){
 
 ### Additional Libraries
 
-- Animate.CSS
-- Hover.CSS
-- CountUp.JS
+- [Animate.CSS](https://animate.style/)
+- [Hover.CSS](https://ianlunn.github.io/Hover/)
+- [CountUp.JS](https://inorganik.github.io/countUp.js/)
 
 I used these additional libraries to add some light-weight animation to highlight intentions and capture user's attention.
 
