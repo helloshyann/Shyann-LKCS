@@ -50,7 +50,7 @@ function adjustFontSize(type){
 }
 ```
 
-### Additional Effects
+### Additional Libraries
 
 - Animate.CSS
 - Hover.CSS
