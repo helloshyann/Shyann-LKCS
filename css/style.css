@@ -44,8 +44,8 @@ header .fab:hover {
 }
 
 nav .container {
-    padding-top: 50px;
-    padding-bottom: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 nav .nav-item {
@@ -56,7 +56,6 @@ nav .nav-item {
 
 .nav-content {
     background-color: #026963;
-    min-height: 200px;
     position: relative;
 }
 
@@ -81,9 +80,8 @@ nav .nav-item {
 .logo {
     position: relative;
     min-width: 100px;
-    max-width: 75%;
-    justify-content: center;
-    padding-left: 50px;
+    max-width: 100%;
+    align-content: center;
 }
 
 main>.container {
@@ -129,6 +127,7 @@ main>.container-fluid {
 
 .hero .container {
     text-align: center;
+    max-height: 100%;
 }
 
 .hero h1 {
@@ -214,19 +213,24 @@ main>.container-fluid {
 /** Calendar Styles **/
 
 .calendar {
-    min-height: 700px;
+    min-height: 777px;
+}
+
+.calendar .container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
 }
 
 .events {
     color: #ffffff;
     background-color: #474646;
-    padding: 25px;
+
 }
 
 .news {
     color: #ffffff;
     background-color: #343434;
-    padding: 25px;
 }
 
 /** Poll Styles **/
@@ -238,6 +242,7 @@ main>.container-fluid {
     min-height: 400px;
     letter-spacing: 1;
     text-align:center;
+    margin-bottom: 50px;
 }
 
 .interactive-poll::before {
@@ -261,15 +266,11 @@ main>.container-fluid {
     font-weight: 700;
 }
 
-.interactive-poll label{
-    padding-right: 50px;
-}
 
 .poll-content {
     position: relative;
     z-index: 1;
-    text-align: center;
-    padding: 100px;
+    padding-top: 50px;
 }
 
 @supports (clip-path: none) {
@@ -312,6 +313,7 @@ main>.container-fluid {
 
 .marketplace img{
     padding-right: 150px;
+    max-width: 100%;
 }
 
 @supports (clip-path: none) {

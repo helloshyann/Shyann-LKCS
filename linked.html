@@ -1,65 +1,205 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>LKCS Financial</title>
-    <meta name="description" content="LKCS Financial">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="img/mark-dark.png">
 
-	<!-- STYLESHEETS -->
-	<!-- *** Bootstrap 5 *** -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
-	<!-- *** Custom Stylesheets *** -->
-	<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<head>
+
+    <title>LKCS Financial</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Custom Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <!-- Font Awesome Script -->
-   <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/png" href="/img/lkcs.png">
 
 </head>
-<body class="container-fluid">
-    <header>
-        <div clas="row">
-            <div class="col">
 
-            </div>
-            <div class="col">
-                coming soon!
-            </div>
-        </div>
-    </header>
-    <nav>
-        <div class="row">
-            <div class="col">
-                <img src="/img/lkcs-financial-logo.jpg">
-            </div>
-            <div class="col">
-                links will go here
-            </div>
-            <div class="col">
-                login will go here
-            </div>
-        </div>
-    </nav>
+<body>
+
     <main>
-        <section>
-            <div class="row">
-                <div class="col">
+
+        <!-- ** SECTION ONE: Top Bar Header ** -->
+        <section id="adjustHeader">
+
+            <!-- Header -->
+            <header class="d-none d-md-block">
+                <div class="row row-cols-1 gy-1">
+                    <!-- Font Size Adjuster -->
+                    <div class="col col-md-6 d-flex justify-content-end">
+                        <button class="button-7" onclick="adjustFontSize('increase')">
+                            <i class="fad fa-text-size"></i><i class="fas fa-plus fa-xs"></i>
+                        </button>
+                        <button class="button-7" onclick="adjustFontSize('decrease')">
+                            <i class="fad fa-text-size"></i><i class="fas fa-minus fa-xs"></i>
+                        </button>
+                    </div>
+                    <!-- Facebook Icon -->
+                    <div class="col col-md-1 d-flex justify-content-end">
+                        <div class="container pt-2">
+                            <li class="list-inline-item"><a href="#" target="_blank"><i
+                                        class="fab fa-facebook-square fa-2x"></i></a>
+                            </li>
+                        </div>
+                    </div>
+                    <!-- Mobile Icons -->
+                    <div class="col col-md-2 d-flex justify-content-end">
+                        Mobile App:
+                        <ul>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i
+                                        class="fab fa fa-apple fa-2x"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i
+                                        class="fab fa fa-android fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Address & Phone -->
+                    <div class="col col-md-3 d-flex justify-content-center">
+                        1414 Sample Ave. • Peru, IL 61354 | 123.456.7891
+                    </div>
+                </div>
+            </header>
+
+        </section>
+
+        <!-- ** SECTION TWO: Logo, Navigation, & OBL ** -->
+        <section id="adjustNav">
+            <!-- Navigation -->
+            <div class="row row-cols-1">
+                <div class="col col-md-9 nav-content">
+
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="d-flex container-fluid">
+
+                            <!-- Logo -->
+                            <div class="container">
+                                <a class="navbar-brand" href="/index.html">
+                                    <img src="/img/lkcs-financial-logo.png" class="logo">
+                                </a>
+                            </div>
+
+                            <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- Nav Links -->
+                            <div class="collapse navbar-collapse nav-content" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/index.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/linked.html">
+                                            Accounts
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/linked.html">
+                                            Loans
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/linked.html">
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/linked.html">
+                                            About
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
 
                 </div>
-                <div class="col">
-                    Home Sweet Home
-                    <a href="x">
+
+                <!-- OBL -->
+                <div class="col col-md-3 obl-content">
+                    <div class="container p-5 mb-5">
+                        <h2>Online Banking</h2>
+                        <button class="button-1" role="button">User ID</button>
+                        <button class="button-2 mt-3" role="button">Login</button>
+                        <p class="mt-2">
+                            <a href="#">Forgot password?</a> | <a href="#">Enroll Now</a>
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer>
 
-    </footer>
+        <!-- ** SECTION THREE: Empty Linked Content ** -->
+        <section id="adjustTiles">
+            <!-- Tiles -->
+            <section class="marketplace">
+                <div class="row row-cols-1 tiles-content">
+                    <div class="col d-flex justify-content-center pt-5">
+                        <p>
+                            <h1>Hello from this linked page!</h1>
+                        </p>
+                    </div>
+                    
+                </div>
+                
+            </section>
+        </section>
+
+        <!-- ** SECTION FOUR: Footer ** -->
+        <section id="adjustFooter">
+            <!-- Footer -->
+            <footer class="footer-content">
+                <div class="row row-cols-1 d-flex">
+                    <div class="col col-md-4 order-last order-md-first">
+                        <img src="img/Large-LKCS.png" class="footer-logo">
+                        <img src="img/eho.png" class="footer-logo">
+                    </div>
+                    <div class="col col-md-4 p-2">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Website Accesibility</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-4">
+                        <ul>
+                            <li class="list-inline-item">
+                                <img src="img/lkcs.png" class="footer-icon">
+                            </li>
+                            <li class="list-inline-item">
+                                Website Design by LKCS
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- *** SCRIPTS *** -->
+    <!-- *** Bootstrap 5 *** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="/js/fontsize.js"></script>
+
 </body>
+
+</html>
