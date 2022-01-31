@@ -19,7 +19,7 @@ I recreated the effect by using CSS to create psudo-elements, transforming them 
 and then clip-path the edges of those elements to give the illusion the sections are actually slanted. While this solution worked, it caused a few 
 finicky margin/padding type issues where there was more space between elements than desired.
   - [Create Diagonal Layouts Like It's 2020](https://9elements.com/blog/pure-css-diagonal-layouts/)
-  - [Go Skew() Yourself!](https://www.youtube.com/watch?v=dDtJPv7DlDU&t=218s)
+  - [Go Skew() Yourself!](https://www.youtube.com/watch?v=dDtJPv7DlDU)
   - [Diagonal Containers in CSS](https://codyhouse.co/blog/post/css-diagonal-containers)
   - [Clippy: Clip Path Tool](https://bennettfeely.com/clippy/)
 
